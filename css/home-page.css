@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px 80px 80px 80px 200px 210px 150px 210px 105px 105px 150px 210px 60px;
+    grid-template-areas: 
+        "header header header header header header header header header header header header"
+        "imgone imgone imgone imgone imgone imgone explore explore explore explore explore explore"
+        "imgone imgone imgone imgone imgone imgone kids kids kids kids kids kids"
+        "imgone imgone imgone imgone imgone imgone teachers teachers teachers researchers researchers researchers"
+        "program program program program program program program program program program program program"
+        "creatures creatures creatures creatures creatures creatures skeleton skeleton skeleton skeleton skeleton skeleton"
+        "quote quote quote quote quote quote quote quote quote quote quote quote"
+        "machine machine machine machine machine machine scientist scientist scientist scientist scientist scientist"
+        "moon moon moon moon moon moon moon moon moon moon moon moon"
+        "cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos"
+        "visit visit visit visit visit visit invoved invoved invoved invoved invoved invoved"
+        "footerlogo footerlogo footerlogo footerlogo address address address address footertext footertext footertext footertext"
+        "socmed socmed socmed socmed socmed socmed socmed socmed socmed socmed socmed socmed"
+}
+
+header{
+    display: grid;
+    grid-area: header;
+}
+
+.imgone{
+    display: grid;
+    grid-area: imgone;
+}
+
+h1{
+    display: grid;
+    grid-area: explore;
+}
+
+.kids{
+    display: grid;
+    grid-area: kids;
+}
+
+.teachers{
+    display: grid;
+    grid-area: teachers;
+}
+
+.researchers{
+    display: grid;
+    grid-area: researchers;
+}
+
+.program{
+    display: grid;
+    grid-area: program;
+}
+
+.creatures{
+    display: grid;
+    grid-area: creatures;
+}
+
+.skeleton{
+    display: grid;
+    grid-area: skeleton;
+}
+
+.quote{
+    display: grid;
+    grid-area: quote;
+}
+
+.machine{
+    display: grid;
+    grid-area: machine;
+}
+
+.scientist{
+    display: grid;
+    grid-area: scientist;
+}
+
+.moon{
+    display: grid;
+    grid-area: moon;
+}
+
+.cosmos{
+    display: grid;
+    grid-area: cosmos;
+}
+
+.visit{
+    display: grid;
+    grid-area: visit;
+}
+
+.involved{
+    display: grid;
+    grid-area: involved;
+}
+
+.footerlogo{
+    display: grid;
+    grid-area: footerlogo;
+}
+
+address{
+    display: grid;
+    grid-area: address;
+}
+
+.footertext{
+    display: grid;
+    grid-area: footertext;
+}
+
+.socmed{
+    display: grid;
+    grid-area: socmed;
+}
+
+img{
+    display: grid;
+    max-width: 50vw;
+}
+
+header img{
+    max-width: 220px;
+}
+
+footer img{
+    max-width: 250px;
+}
