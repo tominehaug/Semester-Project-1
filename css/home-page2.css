@@ -612,6 +612,9 @@ address{
     .cosmos{
         padding-bottom: 40px;
     }
+    .cosmos a{
+        font-size: 24px;
+    }
     .involved a{
         font-size: 24px;
         margin-left: 30px;
