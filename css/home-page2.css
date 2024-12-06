@@ -4,14 +4,76 @@
     box-sizing: border-box;
 }
 
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 40px 0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav li{
+    padding: 0 2vw;
+    width: auto;
+}
+
+nav a{
+    text-decoration: none;
+    color: #383838;
+    font-family: "Exo 2";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+nav a:hover{
+    font-weight: 700;
+}
+
 header {
-    outline: 2px solid red;
+    position: relative;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header a img {
-    height: 4rem;
-    outline: 2px solid red;
+    height: 6rem;
 }
+
+.nav-visit{
+    background-color: #fec34d;
+    clip-path: polygon(6% 1%, 100% 32%, 86% 87%, 13% 100%);
+    padding: 17px 45px 15px 35px;
+    color:#6e4f12;
+    font-family: "Russo One";
+    letter-spacing: 3.36px;
+}
+
+.nav-visit:hover{
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+@media (min-width: 800px){
+    #hamburger-menu, .hamburger {
+        display: none;
+    }
+    nav li:last-child{
+        padding: 0 10px 0 0;
+    }
+}
+
+
+
+/*explore-section*/
 
 .grid-container {
     display: grid;
@@ -21,20 +83,20 @@ header a img {
         "imgone buttons";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto auto;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
 }
 
 .imgone {
     grid-area: imgone;
     border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
     max-width: 50vw;
     height: auto;
 }
 
 aside h1 {
     grid-area: explore;
-    font-size: 2rem;
     font-family: "Russo One";
     font-size: 48px;
     font-style: normal;
@@ -49,7 +111,7 @@ aside ul {
     display: grid;
     gap: 10px;
     list-style: none;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .kids a, .teachers a, .researchers a {
@@ -74,7 +136,7 @@ aside ul {
     font-weight: 400;
     line-height: normal;
     padding: 5vw;
-    margin-bottom: 1vw;
+    margin-bottom: 2vw;
 }
 
 .teachers a, .researchers a  {
@@ -192,7 +254,7 @@ aside ul {
     max-width: 100vw;
     background-image: url('../images/star-background.png');
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
 }
 
 .quote{
@@ -239,7 +301,7 @@ aside ul {
 }
 
 .cosmos img{
-    max-width: 98vw;
+    max-width: 96vw;
     margin: 0;
 }
 
@@ -251,45 +313,308 @@ aside ul {
     font-family: "Exo 2", serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 48px;
+    font-size: 4vw;
 }
 
 .main-third-container{
     display: flex;
     flex-direction: row;
+    height: 250px;
 }
 
 .visit-frame{
     display: flex;
     width: 50vw;
-    height: 300px;
     justify-content: center;
     align-items: center;
 }
 
-.visit{
+.visit-button{
     background-color: #fec34d;
-    clip-path: polygon(0 54%, 100% 67%, 86% 94%, 6% 100%);
+    clip-path: polygon(8% 29%, 98% 40%, 86% 65%, 18% 71%);
     padding: 100px;
-}
-
-.visit a{
-    z-index: 1;
     color:#6e4f12;
     text-decoration: none;
-    font-family: "Russo One", serif;
-    font-weight: 400;
+    font-family: "Russo One";
+    font-size: 48px;
     font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.36px;
 }
 
 .involved{
     display: inline-block;
+    position: relative;
     width: 50vw;
-    height: 300px;
     background-color: #fec34d;
-    text-align: right;
 }
 
 .involved a{
+    color: #6E4F12;
+    text-decoration: none;
+    font-family: "Exo 2";
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/*main section end*/
+
+footer{
+    display: grid;
+    grid-template-areas:
+        "slogan slogan contact hours"
+        "logo logo contact hours";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+    padding: 20px;
+    background-color: #69BA78;
+}
+
+footer img{
+    grid-area: logo;
+    height: 8em;
     align-self: flex-end;
+}
+
+.slogan{
+    grid-area: slogan;
+    color: #002D08;
+    font-family: "Russo One";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 1em;
+    margin-left: 0.5em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+address{
+    grid-area: contact;
+    color: #002D08;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: right;
+    margin-top: 1em;
+}
+
+.hours{
+    grid-area: hours;
+    color: #002D08;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    align-self: flex-start;
+    margin-top: 1em;
+}
+
+.footer-title{
+    color: #002D08;
+    font-family: "Russo One";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+.socmed{
+    display: flex;
+    justify-content: center;
+}
+
+.socmed li{
+    list-style: none;
+    padding: 2em;
+}
+
+.fa-brands{
+    font-size: 40px;
+}
+
+@media (max-width: 1050px){
+    footer{
+        grid-template-areas: 
+            "slogan contact hours"
+            "logo contact hours";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    footer img{
+        height: 6em;
+        align-self: center;
+    }
+}
+
+@media (max-width: 799px) {
+    .hamburger{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    #hamburger-menu{
+        display: none;
+    }
+    #hamburger-menu:checked ~ nav {
+        display: block;
+    }
+    nav{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        background-color: #fff;
+        padding: 20px 0;
+        z-index: 1;
+        text-align: center;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav li{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    nav li:last-child{
+        padding: 40px 0;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+    .hours{
+        align-self: center;
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    address{
+        text-align: center;
+        font-size: 16px;
+    }
+    .footer-title{
+        font-size: 16px;
+    }
+    .slogan{
+        font-size:20px;
+    }
+    .socmed li{
+        list-style: none;
+        padding: 1em;
+    }
+    .fa-brands{
+        font-size: 35px;
+    }
+    .program .card3{
+        display: none;
+    }
+    .program{
+        grid-template-areas:
+        "title title"
+        "card1 card2"
+        ". see-all";
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .program div p:first-child {
+        font-size: 14px;
+    }
+    .program div p:last-child {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 699px) {
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .imgone{
+        display: inline-block;
+        max-width: 90vw;
+    }
+    aside{
+        display: inline-block;
+        align-self:center;
+    }
+    aside ul, aside h1{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .teachers a, .researchers a{
+        font-size: 22px;
+    }
+    .teachers{
+        margin-right: 8px;
+    }
+    .kids a{
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+    .program .card2{
+        display: none;
+    }
+    .program{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .program div p:first-child {
+        font-size: 14px;
+    }
+    .program div p:last-child {
+        font-size: 18px;
+    }
+    .main-first-container{
+        flex-direction: column;
+    }
+    .first-half{
+        width: 98vw;
+    }
+    .main-first-container a{
+        padding-bottom: 60px;
+        font-size: 30px;
+    }
+    .quote{
+        font-size: 24px;
+        padding-left: 1em;
+        padding-right:1em;
+    }
+    .main-second-container{
+        flex-direction: column;
+    }
+    .main-second-container a{
+        padding-top: 60px;
+        font-size: 30px;
+    }
+    .second-half{
+        max-width: 100vw;
+    }
+    .cosmos{
+        padding-bottom: 40px;
+    }
+    .involved a{
+        font-size: 24px;
+        margin-left: 30px;
+    }
+
 }
