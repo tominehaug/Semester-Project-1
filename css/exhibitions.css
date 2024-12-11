@@ -62,6 +62,43 @@ header a img {
     text-decoration: underline;
 }
 
+h1{
+    color: #003D3D;
+    font-family: "Russo One";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.48px;
+}
+
+h2, main p{
+    color: #000;
+    font-family: "Exo 2";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+h2{
+    line-height: 65px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+main img{
+    max-width: 350px;
+    margin: 50px;
+}
+
+main div{
+    margin: 150px;
+    border-style: solid;
+    border-color: #FEC34D;
+    border-width: 5px;
+    clip-path: polygon(16% 16%, 100% 0, 100% 100%, 0 77%);
+
+}
 
 footer{
     display: grid;
