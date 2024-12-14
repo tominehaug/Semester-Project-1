@@ -61,9 +61,15 @@ header a img {
     font-weight: 400;
     text-decoration: underline;
 }
+
+.fa-bars{
+    color: #003d3d;
+}
+
 main{
     margin: 40px;
 }
+
 .grid-container{
     display: grid;
     grid-template-areas: 
@@ -75,6 +81,7 @@ main{
     grid-template-rows: auto auto auto auto;
     column-gap: 45px;
 }
+
 h1{
     grid-area: news;
     color: #003D3D;
@@ -85,6 +92,7 @@ h1{
     line-height: normal;
     letter-spacing: 4.48px;
 }
+
 h2{
     color: #383838;
     font-family: "Exo 2";
@@ -93,6 +101,7 @@ h2{
     font-weight: 400;
     line-height: normal;
 }
+
 h3{
     color: #6E4F12;
     font-family: "Russo One";
@@ -106,6 +115,7 @@ h3{
     margin-bottom: 20px;
     align-self: flex-end;
 }
+
 main p{
     color: #383838;
     font-family: "Exo 2";
@@ -115,6 +125,7 @@ main p{
     line-height: 35px;
     margin-top: 10px;
 }
+
 .date{
     color: rgba(56, 56, 56, 0.68);
     font-family: "Exo 2";
@@ -123,6 +134,7 @@ main p{
     font-weight: 300;
     line-height: normal;
 }
+
 .card1, .card2, .card3{
     padding: 40px;
     border-radius: 25px;
@@ -219,6 +231,7 @@ address{
 
 .fa-brands{
     font-size: 40px;
+    color: #003d3d;
 }
 
 @media (max-width: 1050px){

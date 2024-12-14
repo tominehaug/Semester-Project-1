@@ -62,6 +62,10 @@ header a img {
     text-decoration: underline;
 }
 
+.fa-bars{
+    color: #003d3d;
+}
+
 /*main section*/
 
 .grid-container{
@@ -212,6 +216,7 @@ address{
 
 .fa-brands{
     font-size: 40px;
+    color: #003d3d;
 }
 
 @media (max-width: 1050px){

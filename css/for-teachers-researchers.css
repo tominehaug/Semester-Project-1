@@ -35,6 +35,10 @@ nav a:hover{
     font-weight: 700;
 }
 
+.fa-bars{
+    color: #003d3d;
+}
+
 header {
     position: relative;
     width: 100%;
@@ -174,6 +178,7 @@ address{
 
 .fa-brands{
     font-size: 40px;
+    color: #003d3d;
 }
 
 @media (max-width: 1050px){
