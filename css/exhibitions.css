@@ -79,7 +79,6 @@ h2, main p{
     font-size: 24px;
     font-weight: 400;
     line-height: 35px;
-    padding-left: 20px;
 }
 
 h2{
@@ -90,23 +89,46 @@ h2{
 
 main img{
     max-width: 350px;
-    float: left;
+    object-fit: cover;
 }
-/*
-.border{
-    margin: 150px;
-    max-width: 80vw;
-    background-color: #FEC34D;
-    clip-path: polygon(16% 16%, 100% 0, 100% 100%, 0 77%);
-}
-*/
-.border{
-    border-color: #fec34d;
+
+.yellow-border, .blue-border, .green-border{
     border-style: solid;
     border-width: 5px;
-    margin:100px;
-    padding: 50px;
+    border-radius: 25px;
+    margin: 60px;
+    padding: 40px;
+    display: flex;
 }
+
+.yellow-border{
+    border-color: #fec34d;
+}
+
+.blue-border{
+    border-color: #64D8D9;
+}
+
+.green-border{
+    border-color: #69BA78;
+}
+
+.left{
+    flex-direction: row;
+}
+
+.right{
+    flex-direction: row-reverse;
+}
+
+.left h2, .left p{
+    margin-left: 25px;
+}
+
+.right h2, .right p{
+    margin-right: 15px;
+}
+
 footer{
     display: grid;
     grid-template-areas:
@@ -187,6 +209,25 @@ address{
 }
 
 @media (max-width: 1050px){
+    .yellow-border, .blue-border, .green-border{
+        flex-direction: column;
+        margin: 30px;
+        padding: 20px;
+    }
+    h1{
+        font-size: 48px;
+        text-align: center;
+    }
+    main img, h2{
+        align-self: center;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .right, .left{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
     footer{
         grid-template-areas: 
             "slogan contact hours"
