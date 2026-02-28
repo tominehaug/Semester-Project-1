@@ -14,7 +14,6 @@ The purpose of this project was to demonstrate practical skills and competence f
 - JavaScript
 - HTML
 - CSS
-- ESLint
 - Prettier
 
 ## Getting Started
