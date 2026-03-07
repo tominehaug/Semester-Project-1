@@ -1,4 +1,4 @@
-# Science Museum Website
+# Community Science Museum Website
 
 ![Community Science Museum project screenshot](https://raw.githubusercontent.com/tominehaug/portfolio/main/images/science-museum.jpeg)
 
