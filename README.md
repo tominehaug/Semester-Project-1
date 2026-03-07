@@ -1,6 +1,6 @@
 # Science Museum Website
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![Community Science Museum project screenshot](https://raw.githubusercontent.com/tominehaug/portfolio/main/images/science-museum.jpeg)
 
 Website for a Science Museum! The product of my final semester project from my first semester of Front-End Development studies at Noroff Vocational School.
 
